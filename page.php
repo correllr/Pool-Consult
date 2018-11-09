@@ -1,6 +1,7 @@
+<!--- Automatic template for all Pages (not posts) ---->
 <?php get_header(); ?>
 
-<!--- BASIC PAGES, INCLUDING HOME ---->
+
 
 
 

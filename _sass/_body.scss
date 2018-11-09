@@ -1,0 +1,44 @@
+/* General layout */
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #FFF;
+	color: #151515;
+}
+
+a:link,
+a:visited {
+	color: #151515;
+	text-decoration: none;
+}
+
+a:hover {
+	color:  #006a8c;
+	text-decoration: none;	
+}
+
+* {
+	margin: 0;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0 0;
+	font-weight: normal;
+	padding: 0;
+}
+
+div.container {
+	width: 100%;
+	margin: none auto;
+}

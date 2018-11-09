@@ -1,0 +1,1 @@
+<!---- Automatic template for all blog posts ----->
