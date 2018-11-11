@@ -1,4 +1,68 @@
 .container-home {
+	width: 100%;
+}
 
+.inleiding {
+	margin: 70px auto;
+	text-align: center;
+	p {
+	width: 60%;
+	margin: 30px auto 40px;
+	text-align: center;
+	line-height: 2em;
+	font-family: 'merriweather', sans-serif;
+	}
+	h1 {
+	margin: 0px auto;
+	color: #346C69;
+	margin-bottom: -10px;
+	}
+	span {
+	width: 250px;
+	border-bottom: 2px solid #F50100;
+	padding: 0px 30px;
+	margin: 0px auto 30px;
+	}
+}
 
+.button-inleiding {
+	background-color: #F50100;
+	width: 300px;
+	padding: 15px 20px;
+	color: #fff;
+}
+
+//* Diensten //
+
+.diensten {
+	background-color: #f4faf8;
+	border-top: double #c3d6d5;
+	padding: 60px 150px 60px 150px;
+}
+.flexbox {
+	max-width: 1300px;
+	padding: 10px 0px;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	&-flex {
+	width: 30%;
+	h3 {
+	margin-bottom: -10px;
+	}
+	span {
+	padding: 0px 30px;
+	border-bottom: 2px red solid;
+	}
+	P {
+	padding: 20px 0px 30px;
+	font-family: 'merriweather', sans-serif;
+	}
+	}
+}
+
+.link-diensten {
+ color: #F50100;
 }

@@ -1,5 +1,12 @@
 /* General layout */
 
+@font-face {
+	font-family: 'option';
+	src: url('./Fonts/OPTIOnyx.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	padding: 0;
 	margin: 0;
@@ -10,7 +17,9 @@ body {
 	margin: 0;
 	font-family: 'Roboto', Arial, sans-serif;
 	background-color: #FFF;
-	color: #151515;
+	color: #234a41;
+	line-height: 2em;
+	letter-spacing: 0.05em;
 }
 
 a:link,
@@ -36,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0 0;
 	font-weight: normal;
 	padding: 0;
+}
+h3 {
+font-size: 150%;
 }
 
 div.container {
