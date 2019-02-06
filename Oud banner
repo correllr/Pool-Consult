@@ -1,0 +1,19 @@
+<div class='layer'>	
+	<div id="video-background" style="background-image:url(/wp-content/uploads/2018/11/4-1-e1542039249387.jpg)">	
+	</div>
+	<div id='hometitles'>
+		<h1 class="title">Pool Consult</h1>
+		<h2 class="title">Nederlands Adviescentrum voor Zwembaden (N.A.v.Z.)</h2>
+		<a class="button-banner">Neem contact op ></a>
+	</div>
+</div>
+
+<div class="logobox">
+			<div class="logo">
+				<a href="<?php echo home_url(); ?>"><img src="/wp-content/uploads/2018/11/Untitled-design1-e1543402988260.png" height="80px" width="true" alt="Logo Pool Consult" /></a>
+			</div>
+			<div class="logobox-contact">
+				<div class="logobox-app"><i class="fab fa-whatsapp fa-l"></i><p><a href="callto:0645575803" target="_blank"><p>0418 677333</a></p></div>
+				<div class="logobox-mail"><i class="far fa-envelope"></i><p><a href="info@fm2share.nl" target="_blank"><p>info@Poolconsult.nl </a></p></div>
+			</div>
+		</div>

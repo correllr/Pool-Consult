@@ -1,0 +1,55 @@
+<?php get_header(); ?>
+
+<div class='subpage-layer'>	
+	<div id="subpage-background" style="background-image:url(<?php the_post_thumbnail_url('home-banner') ?>)">	
+	</div>
+</div>
+
+<div id='diensten'>
+	<h1><?php the_title(); ?></h1>
+		<img src="/wp-content/uploads/2018/11/icoontjebackground.png" width="70px" height="true">
+		
+		<div id="diensten-inleiding">			
+		
+			<!-- THE LOOP -->
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+			?>
+				<?php the_content(); ?>
+			<?php
+			endwhile; else: ?>
+			<p></p>
+			<?php endif; ?> 
+			<!-- END LOOP -->
+			
+		</div>
+		
+		<div class='flexbox'>
+		
+		<?php
+			if( have_rows('het_werkterrein', 5) ):
+			while ( have_rows('het_werkterrein', 5) ) : the_row();
+		?>
+		
+		<div class='flexbox-flex'>
+			<?php
+			$image = get_sub_field('afbeelding_dienst');?>
+
+			<div id="afbeeldingdienst" style="background-image:url(<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>)"></div>
+			<h3><a href="<?php the_sub_field('link_dienst'); ?>"><?php the_sub_field('titel_dienst'); ?></a></h3>
+			<p><?php the_sub_field('omschrijving_dienst'); ?></p> 
+			<a href="<?php the_sub_field('link_dienst'); ?>" class="link-diensten">Lees meer ></a>
+		</div>
+		
+		<?php
+			endwhile;
+			else :
+			endif;
+		?>
+		
+		
+		</div>
+		
+</div>
+
+
+<?php get_footer(); ?>

@@ -1,0 +1,32 @@
+<?php /* Template Name: Diensten template moederpagina
+* Template Post Type: page
+*/ ?>
+
+<?php get_header(); ?>
+
+<div class='subpage-layer'>	
+	<div id="subpage-background" style="background-image:url(<?php the_post_thumbnail_url('full-banner') ?>)">	
+	</div>
+</div>
+
+<div class='container-diensten'>
+	<div class='icoon-diensten'>
+		<img src="http://poolconsult.nl/wp-content/uploads/2018/12/Advies-l.png" alt="Pool Consult advies">
+	</div>
+	<div class='inleiding-diensten'>
+			<!-- THE LOOP -->
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+			?>
+				<?php the_content(); ?>
+			<?php
+			endwhile; else: ?>
+			<p></p>
+			<?php endif; ?> 
+			<!-- END LOOP -->
+			<br>
+	<a class="button-subpage" href="/contact/">Neem contact op ></a>
+	</div>
+</div>
+
+
+<?php get_footer(); ?>

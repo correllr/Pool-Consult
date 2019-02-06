@@ -1,0 +1,107 @@
+@media screen and (max-width: 1250px) {
+//////////////////////////////////////
+
+.nav-contact {
+	font-size: 100%;
+}
+.site-nav ul {
+	font-size: 100%;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+//////////////////////////////////////
+
+	.nav-contact {
+		font-size: 90%;
+	}
+	.site-nav ul {
+		font-size: 90%;
+	}
+	
+	.site-nav ul li {
+	margin: 5px 15px;
+	}
+
+	h1.title {
+		color: #fff;
+		font-size: 54px;
+	}
+
+	h2.title {
+		font-size: 29px;
+	}
+}
+
+
+
+@media screen and (max-width: 1000px) {
+//////////////////////////////////////
+
+	.nav-contact {
+		display: none;
+	}
+	.site-nav ul {
+		display: none;
+	}
+	
+	.search-box {
+	display: block;
+	}
+	
+	#mobile-menu-open {
+				display: flex;
+				flex-wrap: wrap;
+				order: 8;
+				margin: auto 30px auto 20px;
+				height: 37px;
+				width: 45px;
+				padding: 10px 0px;
+				align-content: center;
+				i {
+					margin: auto;
+					font-size: 30px!important;
+				}
+				p {
+				font-size: 9px;
+				width: 100%;
+				text-align: center;
+				margin: auto;
+				}
+			}
+	
+	h1.title {
+		font-size: 42px;
+	}
+
+	h2.title {
+		font-size: 24px;
+	}
+
+	.flexbox {
+		&-dienst {
+		width: 100px;
+		height: 100%;
+		img {
+			height: 50px;
+		}
+		h3 {
+		font-size: 130%;
+		}
+		}
+	}
+	
+	.inleiding {
+	h1 {
+    font-size: 230%;
+	}
+	p {
+	font-size: 90%;
+	}
+	}
+	
+	.container-diensten #breadcrumbtrail {
+		display: none;
+	}
+}

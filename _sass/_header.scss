@@ -7,70 +7,57 @@ body, html {
 .site-header {
 	width: 100%;
 	position: absolute;
-	top: 30px;
-	height: 80px;
-	background-color: #346C69;
-	opacity: 0.9;
+	top: 20px;
+	height: 65px;
 	z-index: 50;
+	background-color: rgb(49,169,184);
+	margin-top: 10px;
+	
 }
-
 div.logo {
-	width: 100%;
+	width: 130px;
 	text-align: center;
-	margin-top: 15px;
+	background-color: #fff;
+	position: absolute;
+	height: 63px;
+	padding: 1px 20px;
+	img {
+	width: 100%;
+	}
 }	
 
-.logobox {
-	z-index: 99;
-	float: left;
-	margin-left: 2%;
-	width: 250px;
-	height: 100px;
-	background-color: #fff;
-	letter-spacing: 0em;
-}
-
-.logobox-contact {
-height: 40px;
-background-color: #c3d6d5;
-border-bottom-left-radius: 3px;
-border-bottom-right-radius: 3px;
-margin-top: 0px;
-padding: 20px 0px 0px 0px;
-}
-
-.logobox-app {
-	margin-left: 10px;
-	display: inline;
-	font-size: 82%;
-}
-
-.logobox-mail  {
-	display: inline;
-	font-size: 80%;
-	margin-left: 5px;
-}
-
-
-
-.logobox-mail p, .logobox-app p {
-	display: inline;
-}
-
-.logobox-mail i, .logobox-app i  {
-	margin-right: 5px;
-}
 
 /* Navigation */
 
+.nav-contact {
+	position: absolute;
+	right: 0%;
+	color: #000;
+	font-size: 110%;
+	font-family: 'Gravur', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #fff;
+	padding: 17px 45px;
+top: 49%;
+	transform: translateY(-50%);
+	a {
+	color: #000;
+	}
+	a:hover {
+	color: #31a9b8;
+	}
+}
+
 .site-nav ul {
 	position: absolute;
-	right: 10px;
-	margin-right: 4%;
 	letter-spacing: 2px;
-	font-size: 100%;
-	line-height: 75px;
-	font-family: 'roboto', sans-serif;
+	font-size: 110%;
+	font-family: 'Gravur', sans-serif;
+	text-transform: uppercase;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .site-nav ul:before .site-nav ul:after { content: ""; display: table; }
@@ -84,7 +71,7 @@ padding: 20px 0px 0px 0px;
 }
 
 nav.site-nav ul li a:hover {
-	color: #dadada;
+	color: #f6f6f6;
 }
 
 .site-nav ul li a:link,
@@ -107,24 +94,15 @@ nav.site-nav ul li a:hover {
 
 /* banner */
 
-.layer {
-	z-index: -1;
-	position: relative;
-	background-color: #346C69;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-}
-
 #video-background {
-	background-position: center top;
+	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 280px);
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	opacity: 0.6;
+	margin-top: 40px;
 }
 
 @media screen and (min-width: 781px) {
@@ -165,43 +143,117 @@ nav.site-nav ul li a:hover {
 }
 
 #hometitles {
-	position: relative;
-	bottom: 70vh;
-	margin: auto;
-	text-align:center;
-	width: 70%;
+	position: absolute;
+	top: 91%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
 	max-width: 1200px;
 	z-index:100;
 }
 
 h1.title {
 	color: #fff;
-	font-size: 40px;
+	font-size: 60px;
 	letter-spacing: 0.05em;
-	font-family: 'roboto', sans-serif;
+	font-family: 'Gravur', sans-serif;
 	text-align: center;
 	line-height: 1.2em;
 	text-transform: uppercase;
-	margin-top: 40px;
-	font-weight: bold;
+	
 }
 
 h2.title {
-	color: #fff;
-	font-size: 30px;
+	color: #2e3131;
+	font-size: 36px;
 	letter-spacing: 0.05em;
-	font-family: 'merriweather', sans-serif;
+	font-family: 'Gravur', sans-serif;
 	text-align: center;
 	line-height: 1.2em;
-	margin: 40px auto 70px;
-	width: 80%;
+	text-transform: uppercase;
+	margin-top: 3px;
 }
 
 .button-banner {
-	border: solid 1px white;
+	border: 1px solid #fff;
 	width: 300px;
-	padding: 15px 20px;
+	padding: 13px 23px;
 	color: #fff;
-	letter-spacing: 0.05em;
+	font-size: 20px;
+	font-family: 'Gravurl', sans-serif;
 }
 
+/* Search */
+
+.search-box {
+	min-width: 250px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 250px;
+	float: left;
+	display: none;
+	margin-top: -7px;
+}
+
+.search-boxmobile {
+	display:none;
+	width: 40%;
+}
+
+.search-boxmobile .hd-search {
+	width: 90%;
+	margin: auto;
+}
+
+.hd-search #searchsubmit {
+	Display: none;
+}
+
+.hd-search #s {
+	vertical-align: top;
+	padding: 10px 25px;
+	margin: 19px 0px 0px 0px;
+	width: 100%;
+	border: none;
+	background: url(http://localhost/poolconsult/wp-content/uploads/2018/12/search-pool-consult-3-e1544112855560.png) no-repeat;
+	background-position: 95% 50%; 
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+	font-family: 'Gravurl', sans-serif;
+}
+
+
+#searchresults {
+	width: 100%;
+	display: block;
+}
+
+.container-search {
+	border-top: 1px solid #f6f5f5;
+	padding: 60px 100px 60px 100px;
+}
+
+
+#mobile-menu-open {
+	display: none;
+	width: 100px;
+	height: 30px;
+	color: white;
+	text-transform: uppercase;
+	float: right;
+	p {
+		margin-left: 25px;
+	}
+	#mobile-show {
+		margin-top: 4px;
+	}
+	#mobile-hide {
+		display: none;
+	}
+	.fa-bars {
+		margin-top: 4px;
+	}
+	.fa-times {
+		display: none;
+	}
+}

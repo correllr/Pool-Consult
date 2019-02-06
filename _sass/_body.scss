@@ -1,8 +1,14 @@
 /* General layout */
+@font-face {
+	font-family: 'Gravur';
+	src: url('./fonts/GravurCondensed-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
-	font-family: 'option';
-	src: url('./Fonts/OPTIOnyx.otf');
+	font-family: 'Gravurl';
+	src: url('./fonts/GravurCondensed-Light.otf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,22 +21,16 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: 'Gravur', sans-serif;
 	background-color: #FFF;
-	color: #234a41;
+	color: #2e3131;
 	line-height: 2em;
 	letter-spacing: 0.05em;
 }
 
 a:link,
 a:visited {
-	color: #151515;
 	text-decoration: none;
-}
-
-a:hover {
-	color:  #006a8c;
-	text-decoration: none;	
 }
 
 * {
@@ -38,14 +38,17 @@ a:hover {
 }
 
 p {
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0 0;
 	font-weight: normal;
 	padding: 0;
+	color: #2e3131;
+	font-family: 'Gravur', sans-serif;
 }
+
 h3 {
 font-size: 150%;
 }
@@ -53,4 +56,15 @@ font-size: 150%;
 div.container {
 	width: 100%;
 	margin: none auto;
+	li {
+	font-family: 'Gravurl', sans-serif;
+	line-height: 1.8em;
+	margin-bottom: 7px;
+	font-size: 110%;
+	}
+}
+
+.alignright {
+  float: right;
+  padding-left: 10px;
 }
