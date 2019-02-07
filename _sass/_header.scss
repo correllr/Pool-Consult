@@ -68,6 +68,8 @@ top: 49%;
 	list-style: none;
 	float: left;
 	margin: 5px 20px;
+	position: relative;
+	display: inline-block;
 }
 
 nav.site-nav ul li a:hover {
@@ -80,10 +82,12 @@ nav.site-nav ul li a:hover {
 	color: #fff;
 }
 
+/*
 .site-nav ul li.current-menu-item a:link,
 .site-nav ul li.current-menu-item a:visited {
 	font-weight: bold;
 }
+*/
 
 #hamburger {
 	display: none;
@@ -91,6 +95,61 @@ nav.site-nav ul li a:hover {
 #menuclose {
 	display: none;
 }
+
+// Dropdown menu
+.site-nav ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	// transition: all 0.5s ease; - Leuk animate!
+	padding-top: 16px; // Zorg dat je vanaf hoofd item naar beneden kan gaan zonder hover te verliezen
+	z-index: -1;
+	font-size: 17px;
+	top: 100%;
+	left: -10px;
+	transform: none;
+	li {
+		margin: 0;
+		padding: 5px 10px;
+		white-space: nowrap;
+		box-sizing: border-box;
+		font-weight: normal!important;
+	}
+	
+}
+
+ul li ul li ul {
+	padding-top: 0;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+	background-color: rgba(49,169,184, 0.8);
+	padding-left: 0;
+	li {
+		width: 100%;
+	}
+	
+}
+
+ul li ul li:hover {
+	background-color: rgba(49,169,184, 1); // Veranderd achtergrond on hover over menu item
+}
+
+ul li ul li:hover > ul,
+ul li ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+	top: 0;
+	left: 100%;
+	padding-top: 0;
+}
+
+
 
 /* banner */
 

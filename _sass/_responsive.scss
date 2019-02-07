@@ -16,8 +16,8 @@
 	.nav-contact {
 		font-size: 90%;
 	}
-	.site-nav ul {
-		font-size: 90%;
+	.site-nav ul, .site-nav ul li ul {
+		font-size: 14px; // Zelfde als 90%, anders wordt het steeds kleiner in elke niveau van de menu
 	}
 	
 	.site-nav ul li {
@@ -101,6 +101,7 @@
 	}
 	}
 	
+	// kruimelpad
 	.container-diensten #breadcrumbtrail {
 		display: none;
 	}
