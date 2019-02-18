@@ -42,6 +42,10 @@
 		<a href="http://poolconsult.nl/contact/">Contact</a>
 		</div>
 		
+		<div id="mobile-menu-open">
+			<i class="fas fa-bars fa-lg"></i><i class="fas fa-times"></i><p id="mobile-show">Menu</p><p id="mobile-hide">Sluiten</p>
+		</div>
+	
 		<div class="search-box">
 			<div class="hd-search">
 				<?php get_search_form(); ?>
@@ -49,12 +53,6 @@
 			<div class="search-icon">
 			</div>
 		</div>	
-		
-		<div id="mobile-menu-open">
-			<i class="fas fa-bars fa-lg"></i><i class="fas fa-times"></i><p id="mobile-show">Menu</p><p id="mobile-hide">Sluiten</p>
-		</div>
-	
-
 	
 	</header>
 

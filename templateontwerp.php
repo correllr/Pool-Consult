@@ -43,6 +43,7 @@
 <a href="http://poolconsult.nl/gerealiseerd-ontwerp/"><p>Gerealiseerd ontwerp ></p></a>
 
 <a href="http://poolconsult.nl/ontwerp-detail/"><p>Ontwerp detail ></p></a>
+		
 		<a class="button-diensten" href="/contact/">Neem contact op ></a>
 
 	</div>

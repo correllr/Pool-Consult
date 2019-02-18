@@ -33,9 +33,12 @@
 			<br>
 	</div>
 	<div class='sidebar'>
+		<h2>Meer weten of een offerte ontvangen?</h2>
+		<p>Neem contact met ons op.</p>
 		<a class="button-diensten" href="/contact/">Neem contact op ></a>
 	</div>
 </div>
+
 </div>
 
 

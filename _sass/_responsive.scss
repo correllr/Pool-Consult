@@ -30,15 +30,20 @@
 	}
 
 	h2.title {
-		font-size: 29px;
+    font-size: 29px;
+    margin-top: 5px;
 	}
 }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
 //////////////////////////////////////
-
+	.site-header {
+    position: fixed;
+	background-color: white;
+	}
+	
 	.nav-contact {
 		display: none;
 	}
@@ -55,10 +60,11 @@
 				flex-wrap: wrap;
 				order: 8;
 				margin: auto 30px auto 20px;
-				height: 37px;
+				height: 45px;
 				width: 45px;
 				padding: 10px 0px;
 				align-content: center;
+				color: #31a9b8;
 				i {
 					margin: auto;
 					font-size: 30px!important;
@@ -70,13 +76,15 @@
 				margin: auto;
 				}
 			}
+			
+    
 	
 	h1.title {
-		font-size: 42px;
+		font-size: 50px;
 	}
 
 	h2.title {
-		font-size: 24px;
+		font-size: 28px;
 	}
 
 	.flexbox {
@@ -101,8 +109,71 @@
 	}
 	}
 	
+	#video-background {
+    margin-top: 15px;
+}
+	
 	// kruimelpad
 	.container-diensten #breadcrumbtrail {
 		display: none;
 	}
+}
+	
+@media screen and (max-width: 750px) {
+//////////////////////////////////////
+
+	.hd-search #s {
+    width: 80%!important;
+	}
+	
+	.search-box {
+    margin-left: 230px;
+	}
+	
+	#hometitles {
+    top: 93%;
+	}
+	
+	h1.title {
+		font-size: 40px;
+	}
+
+	h2.title {
+		font-size: 24px;
+	}
+	
+	#aanbod {
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 530px) {
+//////////////////////////////////////
+
+	#video-background {
+		height: calc(100vh - 400px);
+		}
+		
+	h1.title {
+		font-size: 35px;
+	}
+
+	h2.title {
+		font-size: 22px;
+	}
+	#hometitles {
+    top: 90%;
+	width: 80%;
+	}
+
+	#aanbod {
+		width: 20%;
+	}
+	
+	.flexbox-dienst img {
+    height: 80px;
+    width: auto;
+	}
+
 }

@@ -7,12 +7,10 @@ body, html {
 .site-header {
 	width: 100%;
 	position: absolute;
-	top: 20px;
 	height: 65px;
 	z-index: 50;
-	background-color: rgb(49,169,184);
-	margin-top: 10px;
-	
+	background-color: rgb(49,169,184);	
+	top: 0%;
 }
 div.logo {
 	width: 130px;
@@ -38,8 +36,8 @@ div.logo {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	background-color: #fff;
-	padding: 17px 45px;
-top: 49%;
+	padding: 17px 47px;
+	top: 49%;
 	transform: translateY(-50%);
 	a {
 	color: #000;
@@ -56,7 +54,7 @@ top: 49%;
 	font-family: 'Gravur', sans-serif;
 	text-transform: uppercase;
 	top: 50%;
-	left: 50%;
+	left: 49%;
 	transform: translate(-50%, -50%);
 }
 
@@ -114,6 +112,7 @@ nav.site-nav ul li a:hover {
 		white-space: nowrap;
 		box-sizing: border-box;
 		font-weight: normal!important;
+		cursor: pointer;
 	}
 	
 }
@@ -161,39 +160,7 @@ ul li ul li ul:hover {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	margin-top: 40px;
-}
-
-@media screen and (min-width: 781px) {
-	#video-background {
-		display: block;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 780px) {
-	#video-background-tablet {
-		display: block;
-	}
-	#hometitles {
-		bottom: 330px!important;
-	}
-	h2.title {
-		margin-top: 20px;
-	}
-	#scrolldown {
-		display: none;
-	}
-	#flexbox {
-		margin-top: 438px!important;
-	}
-}
-@media screen and (max-width: 480px) {
-	#video-background-mobile {
-		display: block;
-	}
-	#flexbox {
-		margin-top: 270px!important;
-	}
+	margin-top: 30px;
 }
 
 .video {
@@ -251,7 +218,7 @@ h2.title {
 	margin-left: 250px;
 	float: left;
 	display: none;
-	margin-top: -7px;
+	margin-top: -5px;
 }
 
 .search-boxmobile {
@@ -271,13 +238,13 @@ h2.title {
 .hd-search #s {
 	vertical-align: top;
 	padding: 10px 25px;
-	margin: 19px 0px 0px 0px;
+	margin: 17px 0px;
 	width: 100%;
 	border: none;
-	background: url(http://localhost/poolconsult/wp-content/uploads/2018/12/search-pool-consult-3-e1544112855560.png) no-repeat;
+	background: url(/wp-content/uploads/2019/02/Search-pool-consult-blue.png) no-repeat;
 	background-position: 95% 50%; 
-	background-color: rgba(255,255,255,0.2);
-	color: white;
+	border: 1px solid #f6f6f6;
+	color: #2e3131;
 	font-family: 'Gravurl', sans-serif;
 }
 
@@ -315,4 +282,13 @@ h2.title {
 	.fa-times {
 		display: none;
 	}
+}
+
+
+
+.container-diensten #breadcrumbtrail a {
+    color: #2e3131!important;
+}
+.container-diensten #breadcrumbtrail a:hover {
+    color: #31A9B8!important;
 }
