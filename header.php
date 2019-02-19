@@ -22,28 +22,26 @@
 			
 <!--- SITE HEADER --->
 	<header class="site-header">
-	<div class="logobox">
-			<div class="logo">
-				<a href="<?php echo home_url(); ?>"><img src="/wp-content/uploads/2018/12/Logo-Pool-Consult.png"  alt="Logo Pool Consult" /></a>
-			</div>
-		</div>
-
-		<nav class="site-nav">
+		<a id="logo" href="<?php echo home_url(); ?>"><img src="/wp-content/uploads/2018/12/Logo-Pool-Consult.png"  alt="Logo Pool Consult" /></a>
 			
+		<nav class="site-nav">
 				<?php
 					$args = array(
 					'theme_location' => 'primary'
 					);
 				?>
-				<?php wp_nav_menu( $args ); ?>	
-				
+				<?php wp_nav_menu( $args ); ?>		
 		</nav>
+		
 		<div class="nav-contact">
 		<a href="http://poolconsult.nl/contact/">Contact</a>
 		</div>
 		
 		<div id="mobile-menu-open">
 			<i class="fas fa-bars fa-lg"></i><i class="fas fa-times"></i><p id="mobile-show">Menu</p><p id="mobile-hide">Sluiten</p>
+		</div>
+		<div id="mobile-menu-close">
+			<i class="fas fa-times"></i>
 		</div>
 	
 		<div class="search-box">

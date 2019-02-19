@@ -82,6 +82,7 @@
 //* Team //
 #team {
 	width: 1200px;
+	max-width: 100%;
 	margin: auto;
 	padding: 80px 0px;
 	h1 {
@@ -99,6 +100,8 @@
 .flexbox {
 	&-team {
 	width: 25%;
+	min-width: 250px;
+	margin: 0px auto 10px;
 	height: 60%;
 	h3 {
 	margin: 0px auto;
@@ -291,6 +294,7 @@
 .contactformulier {
 	width: 600px;
 	margin: auto;
+	max-width: calc(100% - 20px);
 }
 
 .wpcf7-form {
@@ -308,6 +312,7 @@
 	margin-top: 5px;
 	font-family: 'Gravurl', sans-serif;
 	font-size: 100%;
+	max-width: calc(100% - 20px);
 }
 
 .page-id-5 input {

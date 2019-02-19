@@ -43,23 +43,84 @@
     position: fixed;
 	background-color: white;
 	}
-	
 	.nav-contact {
 		display: none;
 	}
-	.site-nav ul {
+	.site-nav {
 		display: none;
+		width: 100%;
+		overflow: scroll;
+		ul {
+			width: 100%;
+			background: white;
+			padding: 40px 0 0 0;
+			border-bottom: 2px solid black;
+			top: 0;
+			left: 0;
+			transform: none;
+			li { // Eerste niveau mobiel menu
+				display: block;
+				width: 100%;
+				text-align: center;
+				position: static;
+				margin: auto;
+				i { // Down arrows op mobiel menu
+					position: relative;
+					bottom: 3px;
+					left: 5px;
+				}
+			/*	&:hover > ul { // Tweede niveau on hover
+					display: block;
+					position: static;
+					padding: 0;
+				}
+			*/
+				a:link, a:visited, a:hover { // Alle niveaus
+					color: black;
+					visibility: visible;
+				}
+				ul { // Tweede niveau basis
+					border: none;
+					background: white;
+					// position: static;
+					padding: 0;
+					a::before { // Tweede niveau (& hoger) link text
+						content: '- '
+					}
+					
+					/*li:hover > ul { // Derde niveau on hover
+						display: block;
+						position: static;
+						padding: 0;
+					}
+					*/
+					li:hover {
+						background: rgba(0,0,0,0.05);
+					}
+					ul { // Derde niveau basis
+						padding: 0;
+						background: white;
+						
+					}
+				}
+				
+			}
+		}
+	}
+	
+	nav.site-nav ul li a:hover {
+		color: black;
 	}
 	
 	.search-box {
-	display: block;
+	display: inline-block;
 	}
 	
 	#mobile-menu-open {
 				display: flex;
 				flex-wrap: wrap;
 				order: 8;
-				margin: auto 30px auto 20px;
+				margin: auto 0 auto auto;
 				height: 45px;
 				width: 45px;
 				padding: 10px 0px;
@@ -70,7 +131,7 @@
 					font-size: 30px!important;
 				}
 				p {
-				font-size: 9px;
+				font-size: 10px;
 				width: 100%;
 				text-align: center;
 				margin: auto;
@@ -109,12 +170,31 @@
 	}
 	}
 	
-	#video-background {
-    margin-top: 15px;
-}
 	
 	// kruimelpad
 	.container-diensten #breadcrumbtrail {
+		display: none;
+	}
+	
+	.aanpak {
+		padding: 40px 0px;
+		width: 100%;
+		.flexbox {
+			width: calc(100% - 40px);
+		}
+		.flexbox-aanpak {
+			width: 100%;
+			margin-bottom: 20px;
+			a {
+				white-space: nowrap;
+			}
+		}
+		.flexbox-beeld {
+			width: 100%;
+		}
+	}
+	
+	#contact-background {
 		display: none;
 	}
 }
@@ -122,13 +202,6 @@
 @media screen and (max-width: 750px) {
 //////////////////////////////////////
 
-	.hd-search #s {
-    width: 80%!important;
-	}
-	
-	.search-box {
-    margin-left: 230px;
-	}
 	
 	#hometitles {
     top: 93%;
@@ -151,6 +224,17 @@
 @media screen and (max-width: 530px) {
 //////////////////////////////////////
 
+	
+	.search-box {
+		display: block;
+		width: 90%;
+		order: 99;
+	}
+	
+	.hd-search #s {
+		width: 90%;
+	}
+
 	#video-background {
 		height: calc(100vh - 400px);
 		}
@@ -168,7 +252,15 @@
 	}
 
 	#aanbod {
-		width: 20%;
+		width: calc(100% - 20px);
+		max-width: 196px;
+		a {
+			margin: auto;
+		}
+	}
+	
+	.flexbox {
+		width: 100%;
 	}
 	
 	.flexbox-dienst img {
