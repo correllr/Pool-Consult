@@ -39,6 +39,26 @@ function bannerPosition() {
 };
 bannerPosition();
 
+// Add down arrow to appropriate menu items
+jQuery('.menu-item-has-children > a').append('<i class="fas fa-sort-down menu-down-arrow"></i>');
+	
+// JQuery media command
+function mediaSize() { 
+		/* Set the matchMedia */
+		if (window.matchMedia('(max-width: 950px)').matches) {
+			jQuery('.menu-down-arrow').show();
+			jQuery('#mobile-menu-open').show();
+			jQuery('.site-nav').hide();
+		} else {
+			jQuery('.menu-down-arrow').hide();
+			jQuery('.site-nav').show();
+			jQuery('#mobile-menu-close').hide();
+			jQuery('#mobile-menu-open').hide();
+		}
+};
+/* Call the function */
+mediaSize();
+
 // Resize function
 var resizeTimer;
 jQuery(window).on('resize', function(e) {
@@ -47,22 +67,13 @@ resizeTimer = setTimeout(function() {
 	  
 		//Banner below header
 		bannerPosition();
+		
+		// Rerun media command
+		mediaSize();
 
 
   }, 250); // Timing resize function
 }); // End resize function
-
-function mediaSize() { 
-		/* Set the matchMedia */
-		if (window.matchMedia('(max-width: 950px)').matches) {
-			
-		// Add down arrow to appropriate menu items
-		jQuery('.menu-item-has-children > a').append('<i class="fas fa-sort-down"></i>');
-
-		}
-};
-/* Call the function */
-mediaSize();
 
 
 //END

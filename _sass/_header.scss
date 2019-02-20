@@ -1,9 +1,11 @@
 /* Header */
 
+/*
 #wpadminbar {
 	opacity: 0.1;
 	display: none;
 }
+*/
 
 body, html {
     height: 100%;
@@ -94,11 +96,16 @@ nav.site-nav ul li a:hover {
 }
 */
 
+// Hide contact on large screen
+#menu-item-354 {
+	display: none;
+}
+
 #mobile-menu-close {
 	display: none;
 	position: absolute;
     right: 12px;
-    top: 20px;
+    top: 15px;
     font-size: 30px;
     color: #31a9b8;
 }
@@ -159,8 +166,6 @@ ul li ul li ul:hover {
 	padding-top: 0;
 }
 
-
-
 /* banner */
 
 #video-background {
@@ -168,6 +173,7 @@ ul li ul li ul:hover {
 	background-size: cover;
 	width: 100%;
 	height: calc(100vh - 280px);
+	min-height: 140px;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
